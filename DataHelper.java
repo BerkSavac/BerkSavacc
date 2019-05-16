@@ -18,11 +18,10 @@ public class DataHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "create table arac(no integer primary key, nama text null, birthday text null, jk text null, alamat text null);";
+        String sql = "create table arac(no integer primary key, nama text null, birthday text null, jk text null, alamat text null);";asda
         Log.d("Data", "onCreate: " + sql);
         db.execSQL(sql);
 
-        sql = "INSERT INTO arac(no, nama, birthday, jk, alamat) VALUES ('1', 'MacTavish', '1987-05-17', 'L', 'Scotland');";
         db.execSQL(sql);
     }
 
